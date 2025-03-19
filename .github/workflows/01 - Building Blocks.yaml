@@ -10,10 +10,10 @@ jobs:
   my-second-job:
     runs-on: ubuntu-latest
     steps:
-      Failed steps:
-        - run: |
-            echo "I will fail"
-            echo "exit code 1"
-      Say goodby:
-        - run: |
-            echo "Goodbye!"
+      - name: Failed steps
+        run: |
+          echo "I will fail"
+          echo "exit code 1"
+      - name: Say goodby
+        run: |
+          echo "Goodbye!"

@@ -13,4 +13,19 @@ jobs:
                 echo "The runner ID is: ${{github.run_id}}"
                 echo "The runner OS is: $RUNNER_OS"
                 echo "I am running on bash."
+    windows-echo:
+        runs-on: windows-latest
+        steps:
+            - name: Show OS
+              run: |
+                echo "This job is running on a Windows runner."
+                echo "The runner OS is: $RUNNER_OS"
+    
+    mac-echo:
+        runs-on: mac-latest
+        steps:
+            - name: Show OS
+              run: |
+                echo "This job is running on a MadOS runner."
+                echo "The runner OS is: $RUNNER_OS"
         

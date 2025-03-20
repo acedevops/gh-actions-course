@@ -1,5 +1,5 @@
-name: My workflow
-on: [push, workflow_dispatch]
+name: 01 - Building Blocks
+on: [workflow_dispatch]
 
 jobs:
   my-first-job:
@@ -13,7 +13,7 @@ jobs:
       - name: Failed steps
         run: |
           echo "I will fail"
-          echo "exit code 1"
+          exit 1
       - name: Say goodby
         run: |
           echo "Goodbye!"
